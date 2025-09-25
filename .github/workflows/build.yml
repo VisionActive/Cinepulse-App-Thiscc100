@@ -35,7 +35,3 @@ jobs:
         with:
           name: cinepulse-${{ matrix.os }}
           path: dist/*
-
-          The windows-latest label will migrate from Windows Server 2022 to Windows Server 2025 beginning September 2, 2025
-
-
