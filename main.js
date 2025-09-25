@@ -5,7 +5,7 @@ const { version } = require('./package.json');
 
 // ⬇️ REMPLACE UNIQUEMENT CETTE LIGNE PAR L’URL DE TON FICHIER HÉBERGÉ
 // Exemple recommandé: https://ton-domaine.com/cinepulse-config.json
-const REMOTE_CONFIG_URL = 'https://raw.githubusercontent.com/VisionActive/Cinepulse-app/main/config.json';
+const REMOTE_CONFIG_URL = 'https://raw.githubusercontent.com/VisionActive/Cinepulse-URL-Update/main/config.json';
 
 let splashWin = null;
 let mainWin   = null;
@@ -155,3 +155,4 @@ ipcMain.on('cinepulse:retry-config', async () => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
+
