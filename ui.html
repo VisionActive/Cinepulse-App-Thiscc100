@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Cinepulse</title>
+  <link rel="stylesheet" href="./ui.css">
+</head>
+<body>
+  <!-- Zone invisible qui déclenche l’apparition de l’îlot -->
+  <div class="hover-zone"></div>
+
+  <!-- Dynamic Island flottant -->
+  <div class="island" id="island">
+    <div class="btn" id="reload" title="Rafraîchir">↻</div>
+    <div class="btn" id="close" title="Fermer">✕</div>
+  </div>
+
+  <!-- Zone webview (le site) -->
+  <div class="content">
+    <webview id="view" partition="persist:cinepulse"></webview>
+  </div>
+
+  <script src="./ui.js"></script>
+</body>
+</html>
